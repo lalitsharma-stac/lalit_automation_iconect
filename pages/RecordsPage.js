@@ -51,7 +51,7 @@ class RecordsPage {
   async selectAllRecords() {
     await this.selectAllCheckbox.waitFor({ state: 'visible', timeout: 150000 });
     await this.selectAllCheckbox.click({ force: true });
-    await this.page.waitForTimeout(15000); // Wait for selection to register
+    await this.page.waitForTimeout(5000); // Wait for selection to register
     await expect(this.selectAllCheckbox).toBeChecked({ timeout: 150000 });
   }
 
@@ -67,7 +67,7 @@ class RecordsPage {
    * Open Mass Action menu
    */
   async openMassAction() {
-    await this.massActionButton.waitFor({ state: 'visible', timeout: 150000 });
+    await this.massActionButton.waitFor({ state: 'visible', timeout: 80000 });
     await this.massActionButton.click();
     await this.page.waitForTimeout(5000); // Wait for menu to open
   }
@@ -81,7 +81,7 @@ class RecordsPage {
     await this.editRadio.check();
     await this.page.waitForTimeout(5000);
     await this.nextButton.click();
-    await this.page.waitForTimeout(15000); // Wait for next step
+    await this.page.waitForTimeout(8000); // Wait for next step
   }
 
   /**

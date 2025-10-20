@@ -16,7 +16,7 @@ class LoginPage {
       waitUntil: 'domcontentloaded',
       timeout: 190000
     });
-    await this.usernameInput.waitFor({ state: 'visible', timeout: 130000 });
+    await this.usernameInput.waitFor({ state: 'visible', timeout: 90000 });
   }
 
   async login(username, password) {
@@ -25,23 +25,23 @@ class LoginPage {
     await this.nextButton.click();
 
     // Fill password
-    await this.passwordInput.waitFor({ state: 'visible', timeout: 130000 });
+    await this.passwordInput.waitFor({ state: 'visible', timeout: 90000 });
     await this.passwordInput.fill(password);
 
     // Click login and handle potential "already logged in" popup
     await Promise.all([
-      this.page.waitForNavigation({ waitUntil: 'networkidle', timeout: 160000 }),
+      this.page.waitForNavigation({ waitUntil: 'networkidle', timeout: 90000 }),
       this.loginButton.click()
     ]);
 
     // Handle "already logged in" popup if it shows up
     if (await this.continueLink.isVisible({ timeout: 5000 }).catch(() => false)) {
       await this.continueLink.click();
-      await this.page.waitForLoadState('networkidle', { timeout: 150000 });
+      await this.page.waitForLoadState('networkidle', { timeout: 90000 });
     }
     
     // Wait for the main UI to appear
-    await this.userNameDisplay.waitFor({ state: 'visible', timeout: 160000 });
+    await this.userNameDisplay.waitFor({ state: 'visible', timeout: 90000 });
   }
 
     /**
