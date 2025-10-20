@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "playwright-automation-agent": {
+      "command": "node",
+      "args": [
+        "c:\\Users\\lalit.sharma.IOTAANALYTICS\\lalit-automation-iconect\\mcp-server\\enhanced-index.js"
+      ],
+      "env": {}
+    }
+  }
+}

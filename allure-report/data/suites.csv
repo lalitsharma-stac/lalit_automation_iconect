@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4394","Full Workflow - Create Field → Records Mass Edit (QA ACL Research3)","firefox","Mon Oct 20 23:17:27 IST 2025","failed","Mon Oct 20 23:17:32 IST 2025","","FullWorkflow.spec.js","",""
+"","7007","Full Workflow - Create Field → Records Mass Edit (QA ACL Research3)","webkit","Mon Oct 20 23:17:27 IST 2025","failed","Mon Oct 20 23:17:34 IST 2025","","FullWorkflow.spec.js","",""
+"","7260","Full Workflow - Create Field → Records Mass Edit (QA ACL Research3)","chromium","Mon Oct 20 23:17:27 IST 2025","failed","Mon Oct 20 23:17:34 IST 2025","","FullWorkflow.spec.js","",""

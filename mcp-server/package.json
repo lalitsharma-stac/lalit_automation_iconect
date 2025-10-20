@@ -1,0 +1,21 @@
+{
+  "name": "playwright-mcp-server",
+  "version": "2.0.0",
+  "description": "Enhanced MCP AI Agent for Playwright automation",
+  "main": "enhanced-index.js",
+  "type": "commonjs",
+  "bin": {
+    "playwright-mcp-server": "./enhanced-index.js"
+  },
+  "scripts": {
+    "start": "node enhanced-index.js",
+    "start:basic": "node index.js",
+    "test": "node enhanced-index.js"
+  },
+  "keywords": ["mcp", "playwright", "automation", "ai-agent", "testing"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  }
+}
